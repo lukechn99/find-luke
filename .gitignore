@@ -1,4 +1,4 @@
 .penv
-train
-test
-valid
+train/*.png
+test/*.png
+valid/*.png
