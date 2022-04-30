@@ -1,4 +1,10 @@
 .penv
+train/*.jpg
+train/*.jpeg
 train/*.png
+test/*.jpg
+test/*.jpeg
 test/*.png
+valid/*.jpg
+valid/*.jpeg
 valid/*.png
