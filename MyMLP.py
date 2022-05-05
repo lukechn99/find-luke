@@ -40,6 +40,10 @@ def softmax(x):
 
     return f_x
 
+def relu(x):
+    f_x = 0
+    return f_x
+
 class MLP:
     def __init__(self,num_hid):
         # initialize the weights
