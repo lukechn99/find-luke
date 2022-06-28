@@ -9,11 +9,11 @@ class Normalization:
         # compute the statistics of training samples (i.e., means and std)
         self.mean = np.mean(x, axis=0)
         self.std = np.std(x, axis=0)
-        pass # placeholder
 
     def normalize(self,x):
         # normalize the given samples to have zero mean and unit variance (add 1e-15 to std to avoid numeric issue)
         x = (x-self.mean)/(self.std+1e-15)
+        
         return x
 
 def process_label(label):
@@ -21,7 +21,7 @@ def process_label(label):
     one_hot = np.zeros([len(label),10])
     for idx, l in enumerate(label):
         one_hot[idx, l] = 1
-
+        
     return one_hot
 
 def tanh(x):
